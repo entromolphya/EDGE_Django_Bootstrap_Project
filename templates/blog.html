@@ -1,0 +1,24 @@
+<!-- templates/blog.html -->
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Latest Tree Blogs</h1>
+
+    <div class="row mt-4">
+        {% for post in posts %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{{ post.image }}" class="card-img-top" alt="Tree Blog Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.description|truncatewords:20 }}</p>
+                    <a href="{{ post.buy_url }}" class="btn btn-success" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center">No blog posts available.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

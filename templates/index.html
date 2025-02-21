@@ -1,0 +1,43 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+{% block content %}
+<div class="container text-center">
+    <h1>Welcome to Tree Blog</h1>
+    <p class="lead">Your go-to place for everything about trees!</p>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://www.arboroperations.com.au/wp-content/uploads/2021/08/american-elm-768x384.jpg" class="card-img-top" alt="Tree 1">
+                <div class="card-body">
+                    <h5 class="card-title">Most Beautiful Trees</h5>
+                    <p class="card-text">Explore some of the most beautiful trees from around the world.</p>
+                    <a href="https://www.arboroperations.com.au/media-centre/the-most-beautiful-trees-in-the-world-breathtaking-images/amp" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://cdn.britannica.com/85/154485-050-37F56DD2/Giant-sequoia-trees-hiking-trail-Forest-Sequoia.jpg?w=300" class="card-img-top" alt="Tree 2">
+                <div class="card-body">
+                    <h5 class="card-title">Giant Redwood Trees</h5>
+                    <p class="card-text">Learn about the largest trees on earth, the mighty Redwoods.</p>
+                    <a href="https://www.tnnursery.net/products/redwood-trees" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://mongabay-images.s3.amazonaws.com/14/0120Aerial_1026_3240_dark.jpg" class="card-img-top" alt="Tree 3">
+                <div class="card-body">
+                    <h5 class="card-title">Amazon Rainforest Trees</h5>
+                    <p class="card-text">Discover the diverse trees of the Amazon Rainforest.</p>
+                    <a href="https://news.mongabay.com/2014/03/amazon-trees-super-diverse-in-chemicals/" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
