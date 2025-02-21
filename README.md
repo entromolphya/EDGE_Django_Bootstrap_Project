@@ -1,1 +1,1 @@
-## Edge course Django final project
+## Edge course Django project
